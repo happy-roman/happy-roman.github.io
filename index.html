@@ -48,13 +48,24 @@
                 <a class="nav-link waves-effect waves-light" aria-current="page" href="#works">My works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" aria-current="page" href="#contacts">Contacts</a>
+                <div class="dropdown">
+                  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-expanded="false">
+                    Contacts
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://vk.com/homos">Я ВКтонтакте <i class="fab fa-vk m-2"></i></a></li>
+                    <li><a class="dropdown-item" href="https://www.instagram.com/happy__romashka">Мой instagram <i class="fab fa-instagram m-2"></i></a></li>
+                    <li><a class="dropdown-item" href="https://teleg.run/happy-roman">Мой telegram <i class="fab fa-telegram m-2"></i></a></li>
+                    <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=79247732373&text=">Мой whatsapp <i class="fab fa-whatsapp m-2"></i></a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div> 
         </div>
       </nav>
-      <section class="view d-flex justify-content-center" id='intro'>
+      <section class="view d-flex justify-content-center" id='intro'>        
         <div class="container-fluid d-flex align-items-center justify-content-center h-100">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-md-10">
@@ -83,6 +94,9 @@
     </header>
 
     <main>
+      <div class=" container-fluid fixed-bottom bg-dark">
+        <p class="text-white display-8">site version: 0.1.0.0</p>
+      </div>
       <article class="container mt-5" id='about'>
         <h1 class="text-center mb-3 font-weight-bold"> <u>About me</u></h1>
         <hr>
@@ -162,57 +176,67 @@
       </article>
 
       <article id='skills' class="container">
-        <h1 class="text-center mb-3" >My skills</h1>
+        <h1 class="text-center mb-3 font-weight-bold"><u>My skills</u></h1>
         <hr>
         <section class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-html5"></i> HTML 5</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">С 2019 года изучаю HTML, его стандарты, совершенствую владение этим языком разметки,
+              о чем свидетельствуют следующий сертификаты полученные мной:</p>
+              <ul>
+                <li><a href="https://geekbrains.ru/certificates/648668">Сертификат о прохождении теста "HTML&CSS. Сложный уровень"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/649295">Сертификат о прохождении теста "Тест HTML5/CSS3"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый старт"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a></li>
+              </ul>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-css3-alt"></i> CSS</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">Невозможно представить сейчас любой сайт без использования каскадных таблиц стилей (CSS).
+              Постоянно нахожу что-то новое, совершенствую владение и открываю новые возможности для себя в стилизации сайтов.
+              Предпочитаю использовать Flex-box и Grid. Некоторые сертификаты полученные мной:</p>
+            <ul>
+              <li><a href="https://geekbrains.ru/certificates/628697">Сертификат о прохождении теста "HTML&CSS. Начальный уровень"</a></li>
+              <li><a href="https://geekbrains.ru/certificates/626967">Сертификат о прохождении курса "HTML/CSS. Интерактивный курс"</a></li>
+              <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый старт"</a></li>
+              <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a></li>
+            </ul>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-sass"></i> SASS</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">В работе со стилями предпочитаю использовать препроцессор SASS. Уверенно пользуюсь всеми его возможностями.</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-js-square"></i> JavaScript</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">С 2019 начал изучение JavaScript, его стандартов (ES5, ES6), фреймворков, постоянно совершенствую владение.
+              Мои сертификаты:
+            <ul>
+              <li><a href="https://geekbrains.ru/certificates/658563">Сертификат о прохождении курса "Базовый курс JavaScript"</a></li>
+              <li><a href="https://geekbrains.ru/certificates/657741">Сертификат о прохождении теста "Javascript. Начальный уровень"</a></li>
+              <li><a href="https://geekbrains.ru/certificates/922395">Сертификат о прохождении теста "JavaScript. Средний уровень"</a></li>
+            </ul>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-vuejs"></i></i> Vue.JS</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">На занятиях по JavaScript познакомился с фреймворком Vue.JS,
+              с тех пор не представляю веб разработки без его использования.
+              Вразработке находится интернет магазин написанный на нем и админка для обучающего стартапа в котором учавствую.</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-php"></i> PHP 7+</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">Начал освоение PHP-7.
+              Написана небольшая CRM для интернет магазина с обработкой запросов к базе данных и отображением страниц (server-side отрисовка). Мои сертификаты:</p>
+              <ul>
+                <li><a href="https://geekbrains.ru/certificates/882598.pdf">Сертификат о прохождении курса "Алгоритмы и структуры данных на PHP"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/922098.pdf">Сертификат о прохождении курса "Базы данных"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/883601">Сертификат о прохождении теста "PHP. Начальный уровень"</a></li>
+                <li><a href="https://geekbrains.ru/certificates/883564.pdf">Сертификат о прохождении курса "Основы баз данных. Видеокурс"</a></li>
+              </ul>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-github"></i> Git</p>
-            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
-              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
-              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
-              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+            <p class="text-black text-center">При работе с кодом, особенно в команде важно иметь возможность отследить изменения и иметь возможность откатить их.
+              Поэтому ни один разработчик сейчас не работает без системы контроля версий. Некоторые из моих работ можно увидеть а моем репозитории на <a href="https://github.com/happy-roman">GitHub</a></p>
           </div>
         </section>
       </article>
