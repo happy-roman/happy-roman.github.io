@@ -17,6 +17,7 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/main.css">
     <style>
       
     </style>
@@ -24,7 +25,7 @@
   <body class="bg-light">
     <!-- Start your project here-->
     <header class="mb-5">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
         <div class="container bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRightAlignExample"
             aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,35 +34,122 @@
           <img src="./img/mini_img/my-foto.jpg" class='rounded-circle mr-3' alt="" style="height: 3.5rem;">
           <a class="navbar-brand text-light" href="#">< /happy_roman/ ></a>
           <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About me</a>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 smoth-scroll">
+             <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" aria-current="page" href="#intro">Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">My skils</a>
+                <a class="nav-link waves-effect waves-light" aria-current="page" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">My works</a>
+                <a class="nav-link waves-effect waves-light" aria-current="page" href="#skills">My skils</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+                <a class="nav-link waves-effect waves-light" aria-current="page" href="#works">My works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" aria-current="page" href="#contacts">Contacts</a>
               </li>
             </ul>
           </div> 
         </div>
       </nav>
+      <section class="view d-flex justify-content-center" id='intro'>
+        <div class="mt-5">
+          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-md-10">
+                <h2 class="text-white font-weight-bold pt-5 mb-2 display-4">
+                  Lorem ipsum dolor sit amet.
+                  <hr class="hr-light">
+                  <h4 class="text-white my-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ratione.
+                  </h4>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-      <section>
+      <article class="container mt-5" id='about'>
         <h1 class="text-center mb-3"> About me</h1>
-        <article class="container-fluid">
-          <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
-        </article>
-        <article>
-          
-        </article>
+        <hr>
+        <h2 class="bold text-center mb-3">Short history ( My timeline )</h2>
+        <section class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2018</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+          impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+          repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+          rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2019</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2019 August</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2019 September</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2019 Autumn</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2019 November</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2020 Winter</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2020 Spring</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="bold">2020 summer and now</p>
+            <p class="text-black text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam eius
+              impedit reprehenderit quasi omnis quod maxime placeat nobis esse accusantium doloribus vitae corporis labore quia
+              repellendus, numquam accusamus odio, et eos dicta unde neque natus suscipit. Assumenda saepe magnam culpa vitae
+              rerum voluptate, possimus explicabo, tenetur autem distinctio consequuntur!</p>
+          </div>
         </section>
-    </main>
+      </article>
+      <article id='skills'>
+        <h1 class="text-center mb-3" >My skills</h1>
+        <hr>
+        <section></section>
+        <section></section>
+        <section></section>
+      </article>
     </main>
     <footer>
 
