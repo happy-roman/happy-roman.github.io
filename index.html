@@ -23,7 +23,6 @@
     </style>
   </head>
   <body class="bg-light">
-    <!-- Start your project here-->
     <header class="mb-5">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark scrolling-navbar">
         <div class="container">
@@ -94,9 +93,11 @@
     </header>
 
     <main>
+      <!-- version of this site -->
       <div class=" container-fluid fixed-bottom bg-dark">
-        <p class="text-white display-8">site version: 0.1.0.0</p>
+        <p class="text-white display-8">site version: 0.1.1.2</p>
       </div>
+
       <article class="container mt-5" id='about'>
         <h1 class="text-center mb-3 font-weight-bold"> <u>About me</u></h1>
         <hr>
@@ -197,74 +198,193 @@
       </article>
 
       <article id='skills' class="container">
+        
         <h1 class="text-center mb-3 font-weight-bold"><u>My skills</u></h1>
         <hr>
         <section class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-html5 fa-3x text-danger"></i> HTML 5</p>
-            <p class="text-black text-center">С 2019 года изучаю HTML, его стандарты, совершенствую владение этим языком разметки,
-              о чем свидетельствуют следующий сертификаты, полученные мной:</p>
-              <ul>
-                <li><a href="https://geekbrains.ru/certificates/648668">Сертификат о прохождении теста "HTML&CSS. Сложный уровень"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/649295">Сертификат о прохождении теста "Тест HTML5/CSS3"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый старт"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a></li>
-              </ul>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3 ">
+            <div class="accordion" id="accordionHtml"></div>
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3" 
+                type="button" 
+                data-toggle="collapse"
+                data-target="#collapseHtml" 
+                aria-expanded="true" 
+                aria-controls="collapseHtml">
+                <div class="my-2">
+                  <i class="fab fa-html5 fa-3x text-danger"></i><p class="font-weight-bold m-0"> HTML 5</p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapseHtml" 
+                class="collapse p-3" 
+                aria-labelledby="htmlCollapse" 
+                data-parent="#accordionHtml">
+                <p class="text-black text-center">С 2019 года изучаю HTML, его стандарты, совершенствую владение этим языком разметки,
+                  о чем свидетельствуют следующий сертификаты, полученные мной:</p>
+                <ul>
+                  <li><a href="https://geekbrains.ru/certificates/648668">Сертификат о прохождении теста "HTML&CSS. Сложный уровень"</a>
+                  </li>
+                  <li><a href="https://geekbrains.ru/certificates/649295">Сертификат о прохождении теста "Тест HTML5/CSS3"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый
+                      старт"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-css3-alt fa-3x text-primary"></i> CSS</p>
-            <p class="text-black text-center">Невозможно представить сейчас любой сайт без использования каскадных таблиц стилей (CSS).
-              Постоянно нахожу что-то новое, совершенствую владение и открываю новые возможности для себя в стилизации сайтов.
-              Предпочитаю использовать Flex-box и Grid. Некоторые сертификаты, полученные мной:</p>
-            <ul>
-              <li><a href="https://geekbrains.ru/certificates/628697">Сертификат о прохождении теста "HTML&CSS. Начальный уровень"</a></li>
-              <li><a href="https://geekbrains.ru/certificates/626967">Сертификат о прохождении курса "HTML/CSS. Интерактивный курс"</a></li>
-              <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый старт"</a></li>
-              <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="accordion" id="accordionCss">
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseCss" 
+                aria-expanded="true"
+                aria-controls="collapseCss">
+                <div class="my-2">
+                  <i class="fab fa-css3-alt fa-3x text-primary"></i><p class="font-weight-bold m-0"> CSS</p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapseCss" 
+                class="collapse p-3" 
+                aria-labelledby="csslCollapse" 
+                data-parent="#accordionCss">
+                <p class="text-black text-center">Невозможно представить сейчас любой сайт без использования каскадных таблиц стилей
+                  (CSS).
+                  Постоянно нахожу что-то новое, совершенствую владение и открываю новые возможности для себя в стилизации сайтов.
+                  Предпочитаю использовать Flex-box и Grid. Некоторые сертификаты, полученные мной:</p>
+                <ul>
+                  <li><a href="https://geekbrains.ru/certificates/628697">Сертификат о прохождении теста "HTML&CSS. Начальный
+                      уровень"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/626967">Сертификат о прохождении курса "HTML/CSS. Интерактивный
+                      курс"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/187425">Сертификат о прохождении курса "Веб-разработка. Быстрый
+                      старт"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/659043">Сертификат о прохождении курса "Профессиональная верстка"</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-sass fa-3x text-secondary"></i> SASS</p>
-            <p class="text-black text-center">В работе со стилями предпочитаю использовать препроцессор SASS. Уверенно пользуюсь всеми его возможностями.</p>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="accordion" id="accordionSass">
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3" 
+              type="button" 
+              data-toggle="collapse" 
+              data-target="#collapseSass"
+                aria-expanded="true" 
+                aria-controls="collapseSass">
+                <div class="my-2">
+                  <i class="fab fa-sass fa-3x text-secondary"></i><p class="font-weight-bold m-0"> SASS</p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapseSass" 
+                class="collapse p-3" 
+                aria-labelledby="csslCollapse" 
+                data-parent="#accordionSass">
+                <p class="text-black text-center">В работе со стилями предпочитаю использовать препроцессор SASS. Уверенно пользуюсь
+                  всеми его возможностями.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-js-square fa-3x text-warning"></i> JavaScript</p>
-            <p class="text-black text-center">С 2019 начал изучение JavaScript, его стандартов (ES5, ES6), фреймворков, постоянно совершенствую владение.
-              Мои сертификаты:
-            <ul>
-              <li><a href="https://geekbrains.ru/certificates/658563">Сертификат о прохождении курса "Базовый курс JavaScript"</a></li>
-              <li><a href="https://geekbrains.ru/certificates/657741">Сертификат о прохождении теста "Javascript. Начальный уровень"</a></li>
-              <li><a href="https://geekbrains.ru/certificates/922395">Сертификат о прохождении теста "JavaScript. Средний уровень"</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="accordion" id="accordionVue">
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseVue" 
+                aria-expanded="true"
+                aria-controls="collapseVue">
+                <div class="my-2">
+                  <i class="fab fa-vuejs fa-3x text-success"></i></i><p class="font-weight-bold m-0"> Vue.JS</p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapseVue" 
+                class="collapse p-3" 
+                aria-labelledby="csslCollapse" 
+                data-parent="#accordionVue">
+                <p class="text-black text-center">На занятиях по JavaScript познакомился с фреймворком Vue.JS,
+                  с тех пор не представляю веб разработки без его использования.
+                  Вразработке находится интернет магазин написанный на нем и админка для обучающего стартапа в котором участвую.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-vuejs fa-3x text-success"></i></i> Vue.JS</p>
-            <p class="text-black text-center">На занятиях по JavaScript познакомился с фреймворком Vue.JS,
-              с тех пор не представляю веб разработки без его использования.
-              Вразработке находится интернет магазин написанный на нем и админка для обучающего стартапа в котором участвую.</p>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="accordion" id="accordionPhp">
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3"
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapsePhp" 
+                aria-expanded="true"
+                aria-controls="collapsePhp">
+                <div class="my-2">
+                  <i class="fab fa-php fa-3x text-primary"></i><p class="font-weight-bold m-0"> PHP 7+ </p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapsePhp" 
+                class="collapse p-3" 
+                aria-labelledby="csslCollapse" 
+                data-parent="#accordionPhp">
+                <p class="text-black text-center">Начал освоение PHP-7.
+                  Написана небольшая CRM для интернет магазина с обработкой запросов к базе данных и отображением страниц (server-side
+                  отрисовка). Мои сертификаты:</p>
+                <ul>
+                  <li><a href="https://geekbrains.ru/certificates/882598.pdf">Сертификат о прохождении курса "Алгоритмы и структуры
+                      данных на PHP"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/922098.pdf">Сертификат о прохождении курса "Базы данных"</a></li>
+                  <li><a href="https://geekbrains.ru/certificates/883601">Сертификат о прохождении теста "PHP. Начальный уровень"</a>
+                  </li>
+                  <li><a href="https://geekbrains.ru/certificates/883564.pdf">Сертификат о прохождении курса "Основы баз данных.
+                      Видеокурс"</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-php fa-3x text-primary"></i> PHP 7+</p>
-            <p class="text-black text-center">Начал освоение PHP-7.
-              Написана небольшая CRM для интернет магазина с обработкой запросов к базе данных и отображением страниц (server-side отрисовка). Мои сертификаты:</p>
-              <ul>
-                <li><a href="https://geekbrains.ru/certificates/882598.pdf">Сертификат о прохождении курса "Алгоритмы и структуры данных на PHP"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/922098.pdf">Сертификат о прохождении курса "Базы данных"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/883601">Сертификат о прохождении теста "PHP. Начальный уровень"</a></li>
-                <li><a href="https://geekbrains.ru/certificates/883564.pdf">Сертификат о прохождении курса "Основы баз данных. Видеокурс"</a></li>
-              </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <p class="font-weight-bold"><i class="fab fa-github fa-3x text-"></i> Git</p>
-            <p class="text-black text-center">При работе с кодом, особенно в команде важно иметь возможность отследить изменения и иметь возможность откатить их.
-              Поэтому ни один разработчик сейчас не работает без системы контроля версий. Некоторые из моих работ можно увидеть а моем репозитории на <a href="https://github.com/happy-roman">GitHub</a></p>
-          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="accordion" id="accordionGit">
+              <div class="d-flex justify-content-between align-items-center pr-3 shadow rounded ripple text-center pl-3" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseGit" 
+                aria-expanded="true"
+                aria-controls="collapseGit">
+                <div class="my-2">
+                  <i class="fab fa-github fa-3x text-"></i><p class="font-weight-bold m-0">Git</p>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down heartbeat fa-2x"></i>
+                </div>
+              </div>
+              <div id="collapseGit" 
+                class="collapse p-3" 
+                aria-labelledby="csslCollapse" 
+                data-parent="#accordionGit">
+                  <p class="text-black text-center">При работе с кодом, особенно в команде важно иметь возможность отследить изменения и
+                  иметь возможность откатить их. Поэтому ни один разработчик сейчас не работает без системы контроля версий. Некоторые из моих работ можно увидеть в
+                  моем репозитории на <a href="https://github.com/happy-roman">GitHub</a></p>
+              </div>
+            </div>
         </section>
       </article>
       <article id='works' class="container">
         <h1 class="text-center mb-3">My works</h1>
         <hr>
         <p class="text-center">In process...</p>
+        <video src="./img/video/bg-video.mp4" loop="loop" autoplay="" muted="" class="video-bg w-100"></video>
         <!-- <section class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p class="bold"><i class="fab fa-html5"></i> HTML 5</p>
