@@ -17,7 +17,7 @@ const timeLineSlide = document.querySelectorAll('.time-line__item')
 
 
 const timeLineControle = document.querySelector('.controle-timeline')
-let currentSlide = 0
+let currentSlide = 1
 
 timeLineControle.addEventListener('click', (event) => {
   const target = event.target
@@ -56,7 +56,10 @@ function getkBreackPoint(target) {
   return point
 }
 
-function goToPoint(currentSlide) {
+function goToPoint() {
+  if (currentSlide > 9) {
+    currentSlide = 1
+  }
   const targetSlide = 'time-line__item-' + currentSlide
   for (let i = 0; i < timeLineSlide.length; i++) {
     if (timeLineSlide[i].classList.contains(targetSlide)) {
@@ -65,8 +68,15 @@ function goToPoint(currentSlide) {
       timeLineSlide[i].classList.remove('time-line__item-active')
     }
   }
-  currentSlide = +1
-  console.log('currentSlide:' + currentSlide);
+  for (let i = 0; i < timeLineBbreackPoint.length; i++) {
+    const nameClass = 'time-line__breack-point-' + currentSlide
+    if (timeLineBbreackPoint[i].classList.contains(nameClass)) {
+      timeLineBbreackPoint[i].classList.add('time-line__breack-point-active')
+    } else {
+      timeLineBbreackPoint[i].classList.remove('time-line__breack-point-active')
+    }
+  }
+  currentSlide++
 }
 
 /**
@@ -76,16 +86,20 @@ function goToPoint(currentSlide) {
 
 
 function nextBreackPoint() {
-  goToPoint(currentSlide + 1)
+  goToPoint()
 }
 
 function previousBreackPoint() {
   goToSlide(currentSlide - 1)
 }
 
+setInterval(nextBreackPoint, 5000)
 
 
-// setInterval(nextBreackPoint, 1000)
+
+
+
+
 
 // const slides = document.querySelectorAll('#slides .slide')
 // const slider = document.querySelector('.slider')
