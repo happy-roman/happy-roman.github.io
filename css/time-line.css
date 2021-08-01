@@ -40,59 +40,9 @@
 .time-line__brake-point:hover {
   cursor: pointer;
 }
-
-.time-line__brake-point-1 {
-  position: absolute;
-  left: 3%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-2 {
-  position: absolute;
-  left: 15%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-3 {
-  position: absolute;
-  left: 27%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-4 {
-  position: absolute;
-  left: 39%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-5 {
-  position: absolute;
-  left: 51%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-6 {
-  position: absolute;
-  left: 63%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-7 {
-  position: absolute;
-  left: 74%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-8 {
-  position: absolute;
-  left: 85%;
-  top: -0.5rem;
-}
-
-.time-line__brake-point-9 {
-  position: absolute;
-  left: 95%;
-  top: -0.5rem;
+.time-line__brake-points {
+  display: flex;
+  justify-content: space-between;
 }
 
 .time-line__brake-point-active {

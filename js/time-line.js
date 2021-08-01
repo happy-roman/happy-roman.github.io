@@ -13,8 +13,6 @@ const timeLineBrakePoint = document.querySelectorAll('.time-line__brake-point')
  */
 
 const timeLineSlide = document.querySelectorAll('.time-line__item')
-
-
 const timeLineControl = document.querySelector('.controle-timeline')
 let currentSlide = 1
 
@@ -82,4 +80,4 @@ function nextBrakePoint() {
   goToPoint()
 }
 
-setInterval(nextBrakePoint, 5000)
+setInterval(nextBrakePoint, 10000)

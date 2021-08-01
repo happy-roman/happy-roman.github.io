@@ -12,7 +12,7 @@
     right: -200%
     display: none
     &-active
-      right: 0%
+      right: 0
       position: relative
       margin-top: 2rem
       display: block
@@ -27,42 +27,13 @@
     color: #ffffff
     &:hover
       cursor: pointer
-    &-1
+    &s
+      width: 100%
+      display: flex
+      justify-content: space-between
       position: absolute
-      left: 3%
       top: -0.5rem
-    &-2
-      position: absolute
-      left: 15%
-      top: -0.5rem
-    &-3
-      position: absolute
-      left: 27%
-      top: -0.5rem
-    &-4
-      position: absolute
-      left: 39%
-      top: -0.5rem
-    &-5
-      position: absolute
-      left: 51%
-      top: -0.5rem
-    &-6
-      position: absolute
-      left: 63%
-      top: -0.5rem
-    &-7
-      position: absolute
-      left: 74%
-      top: -0.5rem
-    &-8
-      position: absolute
-      left: 85%
-      top: -0.5rem
-    &-9
-      position: absolute
-      left: 95%
-      top: -0.5rem
+
 .time-line__brake-point-active
   background-color: green
   transition: 0.5s
@@ -70,4 +41,4 @@
   -moz-animation: 0.5s
 
 @media screen and ( max-width: 767px )
-  .time-line
+  //.time-line
