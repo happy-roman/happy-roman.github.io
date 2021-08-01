@@ -20,14 +20,14 @@
 }
 
 .time-line__item-active {
-  right: 0%;
+  right: 0;
   position: relative;
   margin-top: 2rem;
   display: block;
   width: 100%;
 }
 
-.time-line__breack-point {
+.time-line__brake-point {
   width: 1.5rem;
   height: 1.5rem;
   background-color: #252969;
@@ -37,65 +37,65 @@
   color: #ffffff;
 }
 
-.time-line__breack-point:hover {
+.time-line__brake-point:hover {
   cursor: pointer;
 }
 
-.time-line__breack-point-1 {
+.time-line__brake-point-1 {
   position: absolute;
   left: 3%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-2 {
+.time-line__brake-point-2 {
   position: absolute;
   left: 15%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-3 {
+.time-line__brake-point-3 {
   position: absolute;
   left: 27%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-4 {
+.time-line__brake-point-4 {
   position: absolute;
   left: 39%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-5 {
+.time-line__brake-point-5 {
   position: absolute;
   left: 51%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-6 {
+.time-line__brake-point-6 {
   position: absolute;
   left: 63%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-7 {
+.time-line__brake-point-7 {
   position: absolute;
   left: 74%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-8 {
+.time-line__brake-point-8 {
   position: absolute;
   left: 85%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-9 {
+.time-line__brake-point-9 {
   position: absolute;
   left: 95%;
   top: -0.5rem;
 }
 
-.time-line__breack-point-active {
+.time-line__brake-point-active {
   background-color: green;
   transition: 0.5s;
   -webkit-transition: 0.5s;

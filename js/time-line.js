@@ -2,10 +2,10 @@
 
 /**
  * for correct work time-line slider
- * all break-points must be numereted class like "time-line__breack-point-1"
+ * all break-points must be numereted class like "time-line__brake-point-1"
  **/
 
-const timeLineBrakePoint = document.querySelectorAll('.time-line__breack-point')
+const timeLineBrakePoint = document.querySelectorAll('.time-line__brake-point')
 
 /**
  * for correct show time-line slide
@@ -24,7 +24,7 @@ timeLineControl.addEventListener('click', (event) => {
 })
 
 function checkBrakePoint(target) {
-  if (target.classList.contains('time-line__breack-point')) {
+  if (target.classList.contains('time-line__brake-point')) {
     goToBrakePoint(target)
   }
 }
@@ -44,12 +44,12 @@ function getBrakePoint(target) {
   let point = 0
   for (let i = 0; i < timeLineBrakePoint.length; i++) {
     let j = i + 1
-    const nameClass = 'time-line__breack-point-' + j
+    const nameClass = 'time-line__brake-point-' + j
     if (target.classList.contains(nameClass)) {
       point = i+1
-      target.classList.add('time-line__breack-point-active')
+      target.classList.add('time-line__brake-point-active')
     } else {
-      timeLineBrakePoint[i].classList.remove('time-line__breack-point-active')
+      timeLineBrakePoint[i].classList.remove('time-line__brake-point-active')
     }
   }
   return point
@@ -68,11 +68,11 @@ function goToPoint() {
     }
   }
   for (let i = 0; i < timeLineBrakePoint.length; i++) {
-    const nameClass = 'time-line__breack-point-' + currentSlide
+    const nameClass = 'time-line__brake-point-' + currentSlide
     if (timeLineBrakePoint[i].classList.contains(nameClass)) {
-      timeLineBrakePoint[i].classList.add('time-line__breack-point-active')
+      timeLineBrakePoint[i].classList.add('time-line__brake-point-active')
     } else {
-      timeLineBrakePoint[i].classList.remove('time-line__breack-point-active')
+      timeLineBrakePoint[i].classList.remove('time-line__brake-point-active')
     }
   }
   currentSlide++

@@ -39,7 +39,7 @@ html, body, header {
   width: 100%;
 }
 
-.time-line__breack-point {
+.time-line__brake-point {
   width: 1.5rem;
   height: 1.5rem;
   background-color: #252969;
@@ -49,7 +49,7 @@ html, body, header {
   color: #ffffff;
 }
 
-.time-line__breack-point:hover {
+.time-line__brake-point:hover {
   cursor: pointer;
 }
 
