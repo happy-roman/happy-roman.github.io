@@ -44,7 +44,7 @@ function getBrakePoint(target) {
     let j = i + 1
     const nameClass = 'time-line__brake-point-' + j
     if (target.classList.contains(nameClass)) {
-      point = i+1
+      point = i + 1
       target.classList.add('time-line__brake-point-active')
     } else {
       timeLineBrakePoint[i].classList.remove('time-line__brake-point-active')

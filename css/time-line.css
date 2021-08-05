@@ -40,9 +40,17 @@
 .time-line__brake-point:hover {
   cursor: pointer;
 }
+
 .time-line__brake-points {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: -0.5rem;
 }
 
 .time-line__brake-point-active {
