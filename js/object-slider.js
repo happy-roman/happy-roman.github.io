@@ -1,5 +1,5 @@
 'use strict'
-const Slider = {
+const slider = {
   timeLineSlides: document.querySelectorAll('.time-line__item'),
   placeForRender: document.querySelector('.time-line__brake-points'),
   timeLineControl: document.querySelector('.controle-timeline'),
@@ -22,7 +22,7 @@ const Slider = {
     this.point = 1
     return timeLinePoints
   },
-  _goToSlide(target = '') {
+  goToSlide(target = '') {
     const a = this._getPoint(target)
     const targetSlide = 'time-line__item-' + a
     this._removeActivePoint()
@@ -56,7 +56,7 @@ const Slider = {
     })
   },
   _addActivePoint(point) {
-    const nameClass = 'time-line__brake-point-' + this.point
+    const nameClass = 'time-line__brake-point-' + point
     this.points.forEach((el) => {
       if (el.classList.contains(nameClass)) {
         el.classList.add('time-line__brake-point-active')
@@ -64,5 +64,10 @@ const Slider = {
     })
   }
 }
-Slider._pointsRender()
-setInterval(Slider._goToSlide, 2000)
+slider._pointsRender()
+setInterval(() => slider.goToSlide(), 10000)
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('time-line__brake-point')) {
+    slider.goToSlide(event.target)
+  }
+})
